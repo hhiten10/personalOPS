@@ -1,0 +1,28 @@
+# Environment
+.env
+venv/
+__pycache__/
+*.pyc
+
+# Personal data (don't commit private logs/notes to a public repo)
+data/workout_logs/*
+data/study_notes/*
+!data/workout_logs/.gitkeep
+!data/study_notes/.gitkeep
+
+# Vector store / checkpoint DB
+*.sqlite3
+chroma_db/
+
+# OS
+.DS_Store
+.venv/
+
+# Google Calendar OAuth secrets (never commit)
+tools/credentials.json
+tools/token.json
+credentials.json
+token.json
+
+# Chroma persist dir
+data/chroma/
